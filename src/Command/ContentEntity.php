@@ -62,7 +62,7 @@ final class ContentEntity extends ModuleGenerator {
     $this->addFile('{machine_name}.permissions.yml', 'model.permissions.yml')
       ->appendIfExists();
     $this->addFile('src/Entity/{class_prefix}.php', 'src/Entity/Example.php');
-    $this->addFile('src/{class_prefix}Interface.php', 'src/ExampleInterface.php');
+    $this->addFile('src/Entity/{class_prefix}Interface.php', 'src/Entity/ExampleInterface.php');
 
     if (!$vars['canonical']) {
       $this->addFile('src/Routing/{class_prefix}HtmlRouteProvider.php', 'src/Routing/ExampleHtmlRouteProvider.php');
